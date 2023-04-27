@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Discogs Album Length Calculator",
+  "version": "1.0",
+
+  "description": "Calculates the total length of the album in minutes",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.discogs.com/release/*"],
+      "js": ["discogs-album-length-calculator.js"]
+    }
+  ]
+}
